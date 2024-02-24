@@ -1,0 +1,15 @@
+@import './base/fonts.scss';
+
+
+
+.header{
+    padding: 50px 100px;
+    background-color: red;
+
+    h1{
+        font-size: 24px;
+        font-family: "Montserrat-regular";
+
+        color: white;
+    }
+}
