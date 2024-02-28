@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container{
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+
+    &--fluid {
+        max-width: unset;
+    }
+
+    /* Tablet */
+    @media (max-width: 1169px) {
+        width: 900px;
+    }
+    
+    /* Mobile */
+    @media (max-width: 899px) {
+        width: 768px;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 767px) {
+        width: 320px;
+    }
+}
+
+svg{
+    cursor: pointer;
+}
+
+a, input, button{
+    display: inline-block;
+    cursor: pointer;
+}
