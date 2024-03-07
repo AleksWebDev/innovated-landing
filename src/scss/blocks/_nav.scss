@@ -1,0 +1,43 @@
+.nav__list{
+    display: flex;
+    column-gap: 50px;
+}
+
+.nav__list-link{
+    color: rgb(87, 88, 89);
+    font-family: "Poppins-regular";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+    text-transform: capitalize;
+    position: relative;
+    transition: 0.2s ease-in;
+
+    &::after{
+        content: '';
+        position: absolute;
+
+        width: 0%;
+        height: 2px;
+
+        background-color: rgb(57, 136, 255);
+
+        bottom: -5px;
+        left: 0;
+
+        transition: 0.2s ease-in;
+    }
+
+    &:hover, &:focus, &:active{
+        color: rgb(57, 136, 255);
+    }
+
+    &:hover::after{
+        color: rgb(57, 136, 255);
+        width: 100%;
+    }
+
+    &:focus::after{
+        width: 100%;
+    }
+}

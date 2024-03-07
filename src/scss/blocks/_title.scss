@@ -1,0 +1,26 @@
+.title{
+    font-family: "Lato-bold";
+    font-size: 69px;
+    font-weight: 700;
+    line-height: 1.2;
+
+    span{
+        color: rgb(57, 136, 255);
+    }
+
+    /* Tablet */
+    @media (max-width: 1169px) {
+        font-size: 48px;
+    }
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        font-size: 42px;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 767px) {
+        font-size: 32px;
+        text-align: center;
+    }
+}

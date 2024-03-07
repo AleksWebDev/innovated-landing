@@ -1,0 +1,16 @@
+.header__top-logo{
+    .logo{
+        color: rgb(5, 12, 38);
+        font-family: "Lato-black";
+        font-size: 25px;
+        font-weight: 900;
+        line-height: 150%;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+
+        /* Mobile XS */
+    @media (max-width: 767px) {
+        font-size: 20px;
+    }
+    }
+}

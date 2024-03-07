@@ -1,4 +1,18 @@
+/* ==== base scss files ==== */
 @import './base/fonts';
 @import './base/reset';
+@import './base/vars';
+@import './base/base';
+@import './base/mixin';
+
+/* ==== blocks scss files ==== */
+@import './blocks/button';
+@import './blocks/logo';    
+@import './blocks/nav';
+@import './blocks/play';
+@import './blocks/title';
+@import './blocks/videobox';
+
+/* ==== sections scss files ==== */
 @import './sections/header';
 
