@@ -16,4 +16,38 @@ window.addEventListener('DOMContentLoaded', function(){
             })
         })
 
+
+        /* nav button active */
+
+        /* document.querySelector('.nav__menu').addEventListener('click', function(){
+            this.classList.toggle('nav__icon-active');
+        }) */
+
+
+        const menuBtn = document.querySelector('.nav__menu');
+        const mobileMenu = document.querySelector('.mobile__menu');
+        const body = document.body;
+
+        menuBtn.addEventListener('click', function(){
+            if(menuBtn.classList.contains('nav__icon-active')){
+                menuBtn.classList.remove('nav__icon-active');
+                mobileMenu.classList.remove('open');
+                body.classList.remove('lock')
+            }else{
+                menuBtn.classList.add('nav__icon-active');
+                mobileMenu.classList.add('open');
+                body.classList.add('lock');
+            }
+        })
+
+        /* histogram */
+        
+        const histogramBar = document.querySelectorAll('.histogram-item__bar');
+
+        histogramBar.forEach(item => {
+            const histogramLine = item.querySelector('.histogram-item__bar-line');
+            const histogramVal = item.querySelector('.histogram-item__bar-val').textContent;
+            
+            histogramLine.style.width = histogramVal;
+        })
 })
