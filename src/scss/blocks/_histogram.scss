@@ -1,0 +1,112 @@
+.histogram__item {
+    width: 500px;
+}
+
+.histogram__item:not(:last-child){
+    margin-bottom: 45px;
+}
+.histogram-item__title {
+    color: rgb(5, 12, 38);
+    font-family: "Lato-medium";
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.5;
+
+    margin-bottom: 20px;
+}
+.histogram-item__bar {
+    width: 100%;
+    height: 15px;
+
+    position: relative;
+    border-radius: 15px;
+}
+.histogram-item__bar-line {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    bottom: 0;
+
+    height: 100%;
+    border-radius: 15px;
+
+    animation: appear 900ms ease-in-out;
+    transform-origin: left;
+}
+
+.histogram-item__bar-val {
+    position: absolute;
+    right: 0;
+    top: -10px;
+    transform: translateY(-100%);
+
+    color: rgb(228, 26, 26);
+    font-family: "Lato-medium";
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+/* animation for line */
+
+@keyframes appear {
+    0%{
+        transform: scale(0.3);
+    }
+    50%{
+        transform: scale(0.8);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+/* modifier histogram-lines */
+
+.histogram-item__bar--webdesign{
+    background-color: rgba(228, 26, 26, 0.1);
+
+    .histogram-item__bar-line {
+        background-color: rgb(228, 26, 26);
+
+        .histogram-item__bar-val{
+            color: rgb(228, 26, 26);
+        }
+    }
+}
+
+.histogram-item__bar--ui-ux{
+    background-color: rgba(218, 90, 18, 0.1);
+    .histogram-item__bar-line{
+        background-color: rgb(218, 90, 18);
+
+        .histogram-item__bar-val{
+            color: rgb(218, 90, 18);
+        }
+    }
+}
+
+.histogram-item__bar--graphic{
+    background-color: rgba(91, 187, 16, 0.1);
+
+    .histogram-item__bar-line{
+        background-color: rgb(91, 187, 16);
+
+        .histogram-item__bar-val{
+            color: rgb(91, 187, 16);
+        }
+    }
+}
+
+.histogram-item__bar--retouching{
+    background-color:  rgba(21, 193, 204, 0.1);
+
+    .histogram-item__bar-line{
+        background-color:  rgb(21, 193, 204);
+
+        .histogram-item__bar-val{
+            color: rgb(21, 193, 204);
+        }
+    }
+}

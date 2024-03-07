@@ -1,0 +1,27 @@
+.features{
+    padding-bottom: 70px;
+}
+.features__title, .features__subtitle, .features__description {
+    text-align: center;
+}
+
+.features__title{
+    margin-bottom: -40px;
+}
+
+.features__subtitle {
+    margin-bottom: 25px;
+}
+
+.features__description {
+    width: 874px;
+    margin: 0 auto;
+}
+
+.features__row{
+    padding-top: 70px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

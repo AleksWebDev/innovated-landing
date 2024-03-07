@@ -1,11 +1,16 @@
 @import '../base/fonts';
+@import '../base/mixin';
 
 
 .button__primary{
-    @include primary-button(30px, 30px, 59px, rgb(57, 136, 255), #fff, 18px);
-    transition: opacity 0.2s ease-in;
-    &:hover, &:active, &:focus{
-        opacity: 0.8;
-    }
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: rgb(57, 136, 255);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-family: "Poppins-medium";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.6;
 }
 

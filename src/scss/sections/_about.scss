@@ -1,0 +1,46 @@
+.about{
+    padding-top: 55px;
+    padding-bottom: 150px;
+
+    overflow: hidden;
+}
+
+.about__title{
+    margin-bottom: -40px;
+}
+
+.about__subtitle{
+    margin-bottom: 25px;
+}
+
+.about__description{
+    width: 806px;
+    margin: 0 auto;
+}
+
+.about__title, .about__subtitle, .about__description{
+    text-align: center;
+}
+
+.about__row{
+    padding-top: 70px;
+
+    display: flex;
+    align-items: center;
+}
+
+.about-img{
+    overflow: hidden;
+    margin-left: -230px;
+
+    img{
+        width: 718px;
+        height: 535px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+}
+
+.histogram{
+    margin-left: 95px;
+}

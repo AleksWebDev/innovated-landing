@@ -11,16 +11,32 @@ import gulpSass from 'gulp-sass'
 import fonter from 'gulp-fonter'
 import ttf2woff2 from 'gulp-ttf2woff2'
 
-
-
 const browserSync = browserSyncModule.create();
 const sass = gulpSass(dartSass);
 const scssFiles = [
     './node_modules/normalize.css/normalize.css',
     './src/scss/base/_fonts.scss',
     './src/scss/base/_reset.scss',
+    './src/scss/base/_vars.scss',
+    './src/scss/base/_base.scss',
+    './src/scss/base/_mixin.scss',
     './src/scss/main.scss',
-    './src/scss/sections/_header.scss'
+    './src/scss/blocks/_button.scss',
+    './src/scss/blocks/_logo.scss',
+    './src/scss/blocks/_nav.scss',
+    './src/scss/blocks/_nav-btn.scss',
+    './src/scss/blocks/_play.scss',
+    './src/scss/blocks/_title.scss',
+    './src/scss/blocks/_videobox.scss',
+    './src/scss/blocks/_mobile-menu.scss',
+    './src/scss/blocks/_section-title.scss',
+    './src/scss/blocks/_section-subtitle.scss',
+    './src/scss/blocks/_section-description.scss',
+    './src/scss/blocks/_histogram.scss',
+    './src/scss/blocks/_feature-card.scss',
+    './src/scss/sections/_header.scss',
+    './src/scss/sections/_about.scss',
+    './src/scss/sections/_features.scss',
 ]
 const jsFiles = [
     './src/js/main.js'

@@ -1,6 +1,6 @@
 @import './fonts';
 
-@mixin primary-button($x, $y, $h, $background-color, $text-color, $font-size){
+/* @mixin primary-button($x, $y, $h, $background-color, $text-color, $font-size, $lh){
     border-radius: 5px;
     background-color: $background-color;
     padding-left: $x;
@@ -10,6 +10,6 @@
     font-family: "Poppins-medium";
     font-size: $font-size;
     font-weight: 500;
-    line-height: 59px;
+    line-height: $lh;
     text-decoration: none;
-}
+} */

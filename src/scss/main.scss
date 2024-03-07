@@ -9,10 +9,19 @@
 @import './blocks/button';
 @import './blocks/logo';    
 @import './blocks/nav';
+@import './blocks/nav-btn';
 @import './blocks/play';
 @import './blocks/title';
 @import './blocks/videobox';
+@import './blocks/mobile-menu';
+@import './blocks/section-title';
+@import './blocks/section-subtitle';
+@import './blocks/section-description';
+@import './blocks/histogram';
+@import './blocks/feature-card';
 
 /* ==== sections scss files ==== */
 @import './sections/header';
+@import './sections/about';
+@import './sections/features';
 
