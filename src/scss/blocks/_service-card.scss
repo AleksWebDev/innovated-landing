@@ -1,0 +1,119 @@
+.service-card {
+    width: 360px;
+    height: 413px;
+
+    padding: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+
+    &::after{
+        content: '';
+        position: absolute;
+
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        backdrop-filter: blur(104px);
+        background-color: rgba(0, 0, 0, 0.6);
+        border-radius: 10px;
+        
+        transition: background-color 0.2s ease-in;
+    }
+
+    &:hover::after{
+        backdrop-filter: unset;
+        background-color: transparent;
+    }
+
+    &:hover .service-card__content{
+        background: linear-gradient(180.00deg, rgb(217, 48, 89),rgb(217, 91, 122) 100%);
+    }
+
+    &:hover .service-card__title{
+        color: rgb(255, 255, 255);
+    }
+
+    &:hover .service-card__text {
+        color: rgb(255, 255, 255);
+    }
+
+    &:hover .service-card__button svg path{
+        stroke: rgb(57, 136, 255);
+    }
+}
+
+
+.service-card__img {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    border-radius: 10px;
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.service-card__content {
+    border-radius: 10px;
+    background-color: rgb(243, 243, 243);
+
+    padding: 60px 20px;
+
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition: background-color 0.2s ease-in;
+}
+
+.service-card__title {
+    color: rgb(5, 12, 38);
+    font-family: "Lato-medium";
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.5;
+
+    margin-bottom: 20px;
+
+    transition: color 0.2s ease-in;
+}
+
+.service-card__text {
+    color: rgb(87, 88, 89);
+    font-family: "Poppins-regular";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.service-card__button{
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+}

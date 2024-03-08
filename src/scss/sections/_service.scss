@@ -1,0 +1,43 @@
+.service {
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    overflow: hidden;
+}
+
+.service__header {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    row-gap: 25px;
+
+    position: relative;
+
+    .service__header-img{
+        position: absolute;
+
+        right: 0;
+
+        transform: translateX(50%);
+    }
+}
+
+
+.service__subtitle {
+    width: 492px;
+}
+
+.service__description {
+    width: 604px;
+}
+
+
+.service__row{
+    padding-top: 70px;
+
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 60px;
+}

@@ -34,9 +34,12 @@ const scssFiles = [
     './src/scss/blocks/_section-description.scss',
     './src/scss/blocks/_histogram.scss',
     './src/scss/blocks/_feature-card.scss',
+    './src/scss/blocks/_service-card.scss',
     './src/scss/sections/_header.scss',
     './src/scss/sections/_about.scss',
     './src/scss/sections/_features.scss',
+    './src/scss/sections/_service.scss'
+    
 ]
 const jsFiles = [
     './src/js/main.js'
