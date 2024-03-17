@@ -1,0 +1,159 @@
+.card-tariff {
+    width: 360px;
+    padding-bottom: 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0px 4px 30px 0px rgba(153, 153, 153, 0.14);
+
+    overflow: hidden;
+}
+.card-tariff__header {
+    width: 100%;
+    padding: 45px 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 0px 1px 0px 0px rgba(153, 153, 153, 0.14);
+    background: rgb(255, 255, 255);
+
+    .card-tariff__title{
+        color: rgb(5, 12, 38);
+        font-family: "Lato-medium";
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 1.5;
+
+        text-transform: uppercase;
+    }
+}
+
+.card-tariff__price{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    span{
+        color: rgb(5, 12, 38);
+        font-family: "Poppins-regular";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.6;
+
+        margin-right: 5px;
+    }
+
+    p:first-child{
+        color: rgb(5, 12, 38);
+        font-family: "Lato-medium";
+        font-size: 35px;
+        font-weight: 500;
+        line-height: 1.4;
+    }
+
+    p:last-child{
+        color: rgb(87, 88, 89);
+        font-family: "Poppins-regular";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.6;
+    }
+}
+
+.card-tariff__info p:not(:last-child){
+    margin-bottom: 15px;
+}
+
+.card-tariff__info{
+
+    margin-bottom: 30px;
+
+    p{
+        color: rgb(87, 88, 89);
+        font-family: "Poppins-medium";
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.6;
+    }
+}
+
+.button__primary-card-tariff {
+    border: 1px solid rgb(57, 136, 255);
+    border-radius: 5px;
+
+    padding: 15px 30px 15px 30px;
+
+    background-color: rgb(255, 255, 255);
+    color: rgb(57, 136, 255);
+    font-family: "Lato-medium";
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.5;
+
+    transition: background-color 0.2s ease-in, color 0.2s ease-in;
+
+    &:hover{
+        background-color: rgb(57, 136, 255);
+        color: rgb(255, 255, 255);
+    }
+}
+
+
+/* active state for card-tariff mixin */
+
+.card-tariff--active {
+
+    background: linear-gradient(180.00deg, rgb(217, 49, 90),rgb(243, 103, 138) 100%);
+
+    .card-tariff__header {
+        position: relative;
+        overflow: hidden;
+        background: linear-gradient(180.00deg, rgb(217, 83, 116),rgb(211, 40, 82) 100%);
+        .card-tariff__title {
+            color: rgb(255, 255, 255);
+        }
+
+        &::after{
+            content: 'Best Deal';
+            position: absolute;
+
+            top: 10px;
+            left: -15px;
+            font-family: "Poppins-regular";
+            color: rgb(5, 12, 38);
+            font-size: 9px;
+            font-weight: 400;
+            line-height: 1.6;
+
+            transform: rotate(-45deg);
+            padding: 0 15px;
+            background-color: rgb(17, 187, 146);
+        }
+    }
+
+    .card-tariff__content { 
+        .card-tariff__price {
+            span, p{
+                color: rgb(255, 255, 255);
+            }
+        }
+        .card-tariff__info {
+            p{
+                color: rgb(255, 255, 255);
+            }
+        }
+
+        .card-tariff__button {
+            .button__primary{   
+                background: rgb(57, 136, 255);
+                color: rgb(255, 255, 255);
+                transition: background-color 0.2s ease-in, color 0.2s ease-in;
+
+                &:hover{
+                    background-color: rgb(255, 255, 255);
+                    color: rgb(57, 136, 255);
+                }
+            }
+        }
+    }
+}

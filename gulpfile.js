@@ -38,7 +38,8 @@ const scssFiles = [
     './src/scss/sections/_header.scss',
     './src/scss/sections/_about.scss',
     './src/scss/sections/_features.scss',
-    './src/scss/sections/_service.scss'
+    './src/scss/sections/_service.scss',
+    './src/scss/sections/_tariff.scss'
     
 ]
 const jsFiles = [
