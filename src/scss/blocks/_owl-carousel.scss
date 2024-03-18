@@ -1,0 +1,74 @@
+.owl-carousel{
+    width: 100%;
+    padding: 100px;
+    border: 1px solid black;
+}
+
+.owl-carousel__item {
+    width: 420px;
+}
+
+.owl-carousel__text {
+    width: 371px;
+    margin-left: auto;
+    margin-bottom: 30px;
+    p{
+        color: rgb(5, 12, 38);
+        font-family: "Poppins-medium";
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.6;
+        position: relative;
+
+        &::after{
+            content: "";
+            position: absolute;
+            background-image: url('../img/slider-img/quotes.svg');
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+            top: -14px;
+            left: -50px;
+            z-index: 100;
+
+            opacity: 0.1;
+        }
+    }
+}
+
+.owl-carousel__info {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.owl-carousel__img {
+    overflow: hidden;
+    img{
+        width: 90px;
+        height: 90px;
+
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}
+
+.owl-carousel__personality{
+    .owl-carousel__name{
+        color: rgb(5, 12, 38);
+        font-family: "Poppins-medium";
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.6;
+    }
+
+    .owl-carousel__position{
+        color: rgb(87, 88, 89);
+        font-family: "Poppins-regular";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.6;
+    }
+}
+
+

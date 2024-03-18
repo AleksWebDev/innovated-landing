@@ -35,15 +35,19 @@ const scssFiles = [
     './src/scss/blocks/_histogram.scss',
     './src/scss/blocks/_feature-card.scss',
     './src/scss/blocks/_service-card.scss',
+    './src/scss/blocks/_owl-carousel.scss',
+    './src/scss/blocks/_owl-carousel-vendor.scss',
     './src/scss/sections/_header.scss',
     './src/scss/sections/_about.scss',
     './src/scss/sections/_features.scss',
     './src/scss/sections/_service.scss',
-    './src/scss/sections/_tariff.scss'
-    
+    './src/scss/sections/_tariff.scss',
+    './src/scss/sections/_slider.scss'    
 ]
+
 const jsFiles = [
-    './src/js/main.js'
+    './src/js/main.js',
+    './src/js/owl-carousel-user.js'
 ]
 
 export const browserSyncInit = () =>{
