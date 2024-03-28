@@ -8,6 +8,13 @@
     background: rgb(255, 255, 255);
 
     text-align: center;
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        width: 100%;
+        height: auto;
+        border: 3px solid rgba(5, 12, 38, 0.05);
+    }
 }
 
 .feature-card__img {

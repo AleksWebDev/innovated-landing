@@ -20,24 +20,49 @@
         right: 0;
 
         transform: translateX(50%);
+
+        /* Mobile */
+        @media (max-width: 899px) {
+            display: none;
+        }
     }
 }
 
 
 .service__subtitle {
     width: 492px;
+    /* Mobile */
+    @media (max-width: 899px) {
+        width: 300px;
+        margin: 0 auto;
+        text-align: center;
+    }
 }
 
 .service__description {
     width: 604px;
+
+    @media (max-width: 899px) {
+        width: 300px;
+        margin: 0 auto;
+        text-align: center;
+    }
 }
 
 
-.service__row{
+/* .service__row{
     padding-top: 70px;
 
     display: flex;
     flex-wrap: wrap;
     column-gap: 30px;
     row-gap: 60px;
+} */
+
+.service__row{
+    display: grid;
+    gap: 30px;
+    padding-top: 70px;
+    grid-template-columns: repeat(auto-fit, 360px);
+    justify-content: center;
 }

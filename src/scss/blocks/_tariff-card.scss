@@ -1,11 +1,16 @@
 .card-tariff {
-    width: 360px;
+    height: fit-content;
     padding-bottom: 40px;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     box-shadow: 0px 4px 30px 0px rgba(153, 153, 153, 0.14);
 
     overflow: hidden;
+
+    @media screen and (max-width: 340px) {
+        width: 300px;
+        margin: 0 auto;
+    }
 }
 .card-tariff__header {
     width: 100%;

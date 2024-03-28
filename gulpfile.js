@@ -36,13 +36,13 @@ const scssFiles = [
     './src/scss/blocks/_feature-card.scss',
     './src/scss/blocks/_service-card.scss',
     './src/scss/blocks/_owl-carousel.scss',
-    './src/scss/blocks/_owl-carousel-vendor.scss',
+    './src/scss/blocks/_email.scss',
     './src/scss/sections/_header.scss',
     './src/scss/sections/_about.scss',
     './src/scss/sections/_features.scss',
     './src/scss/sections/_service.scss',
     './src/scss/sections/_tariff.scss',
-    './src/scss/sections/_slider.scss'    
+    './src/scss/sections/_slider.scss',
 ]
 
 const jsFiles = [
@@ -94,6 +94,11 @@ export const js = () =>{
         .pipe(browserSync.stream());
 }
 
+export const libs = () =>{
+    return gulp.src('./src/libs/**/*')
+        .pipe(gulp.dest('./dist/libs'))
+}
+
 export const stylus = () =>{
     return gulp.src(scssFiles)
     .pipe(soursMap.init())
@@ -114,7 +119,7 @@ export const watch = () =>{
 }
 
 export const build = gulp.series(clear, gulp.parallel(
-    html, stylus, webp, js, fonts
+    html, stylus, webp, js, fonts, libs
 ))
 
 export const dev = gulp.series(build, gulp.parallel(browserSyncInit, watch))

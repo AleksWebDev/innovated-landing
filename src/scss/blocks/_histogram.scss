@@ -1,5 +1,10 @@
 .histogram__item {
     width: 500px;
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+    width: 300px;
+    }
 }
 
 .histogram__item:not(:last-child){

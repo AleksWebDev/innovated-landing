@@ -11,6 +11,12 @@
     row-gap: 15px;
 }
 
+.tariff-header__subtitle{
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
+}
+
 .section__description--tariff{
     color: rgb(87, 88, 89);
     font-family: "Poppins-medium";
@@ -42,6 +48,11 @@
 
     .button__primary--tariff:not(:last-child){
         margin-right: 10px;
+        @media screen and (max-width: 767px) {
+            margin-right: 0;
+
+            margin-bottom: 10px;
+        }
     }
 }
 
@@ -63,10 +74,14 @@
 .tariff-content__wrapper{
     padding-top: 60px;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    justify-content: center;
+    align-items: end;
+    gap: 30px;
 
-    row-gap: 60px;
+    /* Mobile */
+    @media (max-width: 899px) {
+        grid-template-columns: 320px;
+    }
 }

@@ -49,6 +49,20 @@ $(document).ready(function() {
     const photoCarousel = $('#photo-carousel');
 
     photoCarousel.owlCarousel({   
-        items: 2,
+
+        /* items: 2, */
+        dots: true,
+        margin: 120,
+
+        responsive : {
+            0: {
+                items: 1,
+            },
+
+            1140: {
+                items: 2,
+            }
+        }
+
     })
 })

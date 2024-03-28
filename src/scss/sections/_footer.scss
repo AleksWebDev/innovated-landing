@@ -1,0 +1,117 @@
+.footer {
+    padding-top: 70px;
+    padding-bottom: 55px;
+    background-color: rgb(5, 12, 38);
+}
+
+.footer__row {
+    display: flex;
+    justify-content: space-between;
+
+    padding-bottom: 30px;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}
+
+.footer__item{
+    span{
+        display: inline-block;
+        text-transform: uppercase;
+        color: rgb(255, 255, 255);
+        font-family: "Lato-black";
+        font-size: 25px;
+        font-weight: 900;
+        line-height: 1.5;
+        letter-spacing: 5%;
+        margin-bottom: 30px;
+    }
+
+    p{
+        width: 316px;
+        font-family: "Poppins-regular";
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.6;
+
+        @media screen and (max-width: 340px) {
+            width: 300px;
+        }
+    }
+}
+
+.footer__list{
+
+   li:first-child{
+    color: rgb(255, 255, 255);
+    font-family: "Lato-black";
+    font-size: 25px;
+    font-weight: 900;
+    line-height: 1.5;
+    letter-spacing: 5%;
+
+    margin-bottom: 30px;
+   }
+
+   li{
+    a{
+        color: rgba(255, 255, 255, 0.7);
+        font-family: "Poppins-regular";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.6;
+        letter-spacing: 0%;
+
+        margin-bottom: 10px;
+
+        transition: color 0.2s ease-in;
+
+        &:hover{
+            color: rgba(255, 255, 255, 1);
+        }
+    }
+   }
+}
+
+.footer__contacts{
+    span{
+        display: block;
+        color: rgb(255, 255, 255);
+        font-family: "Lato-black";
+        font-size: 25px;
+        font-weight: 900;
+        line-height: 1.5;
+        letter-spacing: 5%;
+
+        margin-bottom: 30px;
+    }
+}
+
+.footer__email{
+    margin-bottom: 10px;
+}
+
+.social__links{
+    margin-bottom: 30px;
+  a:not(:last-child){
+    margin-right: 25px;
+  }
+}
+
+.footer__copyright{
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 30px;
+
+    p{
+        text-align: center;
+        color: rgb(87, 88, 89);
+        font-family: "Montserrat-regular";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.6;
+    }
+}
